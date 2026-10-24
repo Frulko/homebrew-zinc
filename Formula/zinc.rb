@@ -2,28 +2,22 @@
 class Zinc < Formula
   desc "Strict, typed subset of TypeScript for apps, games and boards"
   homepage "https://github.com/Frulko/zinc"
-  version "0.6.2"
+  version "0.7.3"
 
   on_macos do
     on_arm do
-      url "https://github.com/Frulko/zinc/releases/download/v0.6.2/zinc-0.6.2-macos-arm64.tar.gz"
-      sha256 "bfa118e52402689e47377ec192384e05ddc6be8725cbd120895a254fe7dcac51"
+      url "https://github.com/Frulko/zinc/releases/download/v0.7.3/zinc-0.7.3-macos-arm64.tar.gz"
+      sha256 "342dcbfb9eeea1777243c553c6cfff6068c1fc649468c9d412d339b40767c101"
     end
     on_intel do
-      url "https://github.com/Frulko/zinc/releases/download/v0.6.2/zinc-0.6.2-macos-x86_64.tar.gz"
-      sha256 "d9f92ce62333fbd0f181af1370b54bbcbda295f07f272201f6d11a353fe8a847"
+      url "https://github.com/Frulko/zinc/releases/download/v0.7.3/zinc-0.7.3-macos-x86_64.tar.gz"
+      sha256 "b0bf6636994d5fe4425193d83622b7c1de3cc803e73b9b221860603a6f014f6a"
     end
   end
 
   on_linux do
-    on_arm do
-      url "https://github.com/Frulko/zinc/releases/download/v0.6.2/zinc-0.6.2-linux-aarch64.tar.gz"
-      sha256 "498df42b4e4ff24327602d59145df9f4b442b0237a3ffa27dd519f2c1bebe0bb"
-    end
-    on_intel do
-      url "https://github.com/Frulko/zinc/releases/download/v0.6.2/zinc-0.6.2-linux-x86_64.tar.gz"
-      sha256 "2aadac3316f0ee41fff180999e4493fa3552d010558be4a101c676b27722202f"
-    end
+
+
   end
 
   def install
@@ -33,7 +27,16 @@ class Zinc < Formula
   end
 
   def caveats
+    # the end of install.sh and install.ps1 (zinc --next-steps in English; tests/t1/first_run.sh keeps the two equal)
     <<~TXT
+      Three steps to start:
+        1. zinc new   make a project (it asks what to make)
+        2. zinc dev   in the project's folder: runs it, every save shows at once
+        3. zinc tour  a guided first walk
+      Learn to draw and react to the keyboard and mouse: https://frulko.github.io/zinc/docs/learn/
+      The guide: https://frulko.github.io/zinc/docs/guide/01-getting-started/
+      Is this machine ready? zinc doctor tells you.
+
       Update zinc with: brew update && brew upgrade zinc   (zinc update is for the install.sh install)
       Zinc Atelier, the app: https://github.com/Frulko/zinc/releases/latest
     TXT
