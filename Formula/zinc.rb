@@ -2,27 +2,27 @@
 class Zinc < Formula
   desc "Strict, typed subset of TypeScript for apps, games and boards"
   homepage "https://github.com/Frulko/zinc"
-  version "0.8.2"
+  version "0.9.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/Frulko/zinc/releases/download/v0.8.2/zinc-0.8.2-macos-arm64.tar.gz"
-      sha256 "5baf43ff8211731e6ff261162ae7e44b64af58a7b2c702ff035aa7ba88c61125"
+      url "https://github.com/Frulko/zinc/releases/download/v0.9.1/zinc-0.9.1-macos-arm64.tar.gz"
+      sha256 "3118247c5fb5ff4ba743f455d1c4573379ea7e4fc4f0085992b8dfd5efea7517"
     end
     on_intel do
-      url "https://github.com/Frulko/zinc/releases/download/v0.8.2/zinc-0.8.2-macos-x86_64.tar.gz"
-      sha256 "349c1d2417b1980ac0eb1bfb68c86e393d8353c2d954f7d1427b0ae9e35a93e5"
+      url "https://github.com/Frulko/zinc/releases/download/v0.9.1/zinc-0.9.1-macos-x86_64.tar.gz"
+      sha256 "bdfcc89db02d99a24920993e27a100c05bfcb93164a7ddc67b2e1365ad666e19"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Frulko/zinc/releases/download/v0.8.2/zinc-0.8.2-linux-aarch64.tar.gz"
-      sha256 "d153f756cded202912e67c53aac5839e3892f929d0e05de5f67a513dd6308dce"
+      url "https://github.com/Frulko/zinc/releases/download/v0.9.1/zinc-0.9.1-linux-aarch64.tar.gz"
+      sha256 "2bf2d6f52126bb8e0e1383846016de5d8b3685568a1d610f0190e17cf4d4baa2"
     end
     on_intel do
-      url "https://github.com/Frulko/zinc/releases/download/v0.8.2/zinc-0.8.2-linux-x86_64.tar.gz"
-      sha256 "fab0a57e906d1528de76e9bd9e261101c71d3694e891459b9cbebe49e5e17966"
+      url "https://github.com/Frulko/zinc/releases/download/v0.9.1/zinc-0.9.1-linux-x86_64.tar.gz"
+      sha256 "3aecea3dafbc319464965b3ab765a0a31221af75545b0edeea8fbfec55b90b4c"
     end
   end
 
